@@ -4,7 +4,7 @@ import two from "../assets/two.png";
 
 const About = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center  px-6 sm:px-16 lg:px-32 mt-10 sm:mt-32 lg:mt-48">
+    <div className="flex flex-col-reverse sm:flex-row items-center justify-center  px-6 sm:px-16 lg:px-32 mt-10 sm:mt-32 lg:mt-48">
       {/* Left Section (Text) */}
       <div className="text-center sm:text-left flex flex-col items-center sm:items-start">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h1>

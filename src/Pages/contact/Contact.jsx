@@ -13,9 +13,9 @@ const Contact = () => {
         <div>
           <Link
             to={"/contact"}
-            className="btn rounded-4xl hover:bg-green-600 text-white bg-gray-900 p-5"
+            className="btn rounded-4xl mt-4 hover:bg-green-600 text-white bg-gray-900 p-5"
           >
-            Hire Me
+           Send me Details
           </Link>
         </div>
       </div>

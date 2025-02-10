@@ -3,7 +3,7 @@ import one from "../../assets/one.png";
 
 const HeaderSection = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-32 sm:pt-20 mx-4 sm:mx-10 text-center sm:text-left mb-10">
+    <div className="flex flex-col items-center justify-center  sm:pt-20 mx-4 sm:mx-10 text-center sm:text-left mb-10">
       <h1 className="text-lg sm:text-xl font-bold">
         Hi! I'm
 
