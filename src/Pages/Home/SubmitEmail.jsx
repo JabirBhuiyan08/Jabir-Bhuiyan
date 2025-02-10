@@ -29,7 +29,7 @@ const EmailForm = () => {
         />
         <button
           type="submit"
-          className="w-full mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+          className="w-full mt-4 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
         >
           Submit
         </button>

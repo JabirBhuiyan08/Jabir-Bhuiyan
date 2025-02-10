@@ -54,7 +54,7 @@ const Service = () => {
         <img
           src={four}
           alt=""
-          className="absolute top-30 right-0 w-16 sm:w-32 md:w-40 animation-img3"
+          className="absolute top-60 right-10 w-16 sm:w-32 md:w-40 animation-img3"
         />
       </div>
     </div>

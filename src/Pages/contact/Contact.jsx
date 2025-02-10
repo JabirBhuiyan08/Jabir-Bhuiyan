@@ -23,7 +23,7 @@ const Contact = () => {
         <img
           src={five}
           alt=""
-          className="w-40 md:w-28 mt-40 sm:-mt-38 md:ml-44 relative animation-img3"
+          className="w-40 md:w-28 mt-40 sm:-mt-38 md:ml-44 relative animation-img1"
         />
       </div>
     </div>

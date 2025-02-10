@@ -6,12 +6,43 @@
     height: 400px;
 }
 
+/* typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17ch; /* Adjust based on text length */
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+/* Apply animations */
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white; /* Cursor effect */
+  width: 0;
+  animation: typing 2s steps(11, end) forwards, blink 0.7s infinite;
+}
+
+
 @keyframes flyingAnimation1 {
     0% {
       transform: translateX(0) translateY(0);
     }
     50% {
-      transform: translateX(0) translateY(-20px); /* Adjust for flying motion */
+      transform: translateX(0) translateY(-20px) ; /* Adjust for flying motion */
     }
     100% {
       transform: translateX(0) translateY(0);
@@ -33,7 +64,7 @@
       transform: translateX(0px) translateY(0);
     }
     50% {
-      transform: translateX(0px) translateY(-90px); /* Adjust for flying motion */
+      transform: translateX(0px) translateY(-360px) rotate(360deg); /* Adjust for flying motion */
     }
     100% {
       transform: translateX(0px) translateY(0px);
@@ -41,7 +72,7 @@
   }
   
   .animation-img1 {
-    animation: flyingAnimation1 10s infinite ease-in-out;
+    animation: flyingAnimation1 5s infinite ease-in-out;
   }
   .animation-img2 {
     animation: flyingAnimation2 9s infinite ease-in-out;
