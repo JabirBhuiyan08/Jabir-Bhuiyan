@@ -14,7 +14,7 @@ const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
       <QueryClientProvider client={queryClient}>
-          <div className="full-screen">
+          <div className=" full-screen w-full bg-black text-white">
             <RouterProvider router={router} />
           </div>
       </QueryClientProvider>

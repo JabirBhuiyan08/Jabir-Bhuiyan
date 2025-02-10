@@ -1,2 +1,52 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.one{
+    width: 400px;
+    height: 400px;
+}
+
+@keyframes flyingAnimation1 {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(0) translateY(-20px); /* Adjust for flying motion */
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+@keyframes flyingAnimation2 {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(70px) translateY(-20px); /* Adjust for flying motion */
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+  }
+@keyframes flyingAnimation3 {
+    0% {
+      transform: translateX(0px) translateY(0);
+    }
+    50% {
+      transform: translateX(0px) translateY(-90px); /* Adjust for flying motion */
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+  }
+  
+  .animation-img1 {
+    animation: flyingAnimation1 10s infinite ease-in-out;
+  }
+  .animation-img2 {
+    animation: flyingAnimation2 9s infinite ease-in-out;
+  }
+  .animation-img3 {
+    animation: flyingAnimation3 9s infinite ease-in-out;
+  }
+  
