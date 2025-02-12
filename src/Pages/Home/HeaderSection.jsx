@@ -4,8 +4,8 @@ import one from "../../assets/one.png";
 const HeaderSection = () => {
   return (
     <div className="flex flex-col items-center justify-center  sm:pt-20 mx-4 sm:mx-10 text-center sm:text-left mb-10">
-      <h1 className="text-lg sm:text-xl font-bold typing-text">
-        Hi! I'm
+      <h1 className="text-lg sm:text-xl font-bold typing-text ">
+        Hi! It's
 
           <div className="text-green-600 animate-bounce  inline-block pl-2">
             {" "}
@@ -21,7 +21,7 @@ const HeaderSection = () => {
       /> */}
 
       <div className=" flex flex-col sm:flex-row items-center justify-center mt-6 sm:mt-10 gap-6 sm:gap-12">
-        <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight text-center sm:text-left flex items-center">
+        <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold leading-tight text-center sm:text-left flex items-center">
           Create your own <br />
           <img
             src={one}

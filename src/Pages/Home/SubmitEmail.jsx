@@ -17,7 +17,7 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="flex md:fixed pt-20 sm:pt-0 top-0 right-0 items-center animation-img1 rounded-4xl">
+    <div className="flex md:fixed  pt-20 sm:pt-0 top-0 right-0 relative sm:z-50 bg-gray-950/50 items-center animation-img1 rounded-4xl">
       <form onSubmit={handleSubmit} className=" p-6 rounded-lg shadow-lg w-80">
         <h2 className="text-2xl font-bold mb-4 ">Subscribe</h2>
         <input
