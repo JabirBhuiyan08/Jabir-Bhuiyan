@@ -8,6 +8,9 @@ import Contact from "../contact/contact";
 import ContactForm from "../contact/ContactForm";
 import Skills from "../Skills/Skills";
 import Navbar from "../Navbar/Navbar";
+import ScrollAnimation from "../testAnimaiton/ScrollAnimation";
+
+
 
 const Home = () => {
   const headerRef = useRef(null);
@@ -16,7 +19,6 @@ const Home = () => {
   const serviceRef = useRef(null);
   const portfolioRef = useRef(null);
   const contactRef = useRef(null);
-  const formRef = useRef(null);
 
   const scrollToSection = (ref) => {
     if (ref && ref.current) {
@@ -48,6 +50,7 @@ const Home = () => {
 
       <hr className="mt-32" />
 
+      <ScrollAnimation></ScrollAnimation>
       <div ref={skillRef}>
         <Skills />
       </div>
