@@ -10,7 +10,7 @@ Live Preview
 - Backend: Firebase (Hosting & Authentication)
 
 
- Contact
+ Contact:
 📧 Email: jabirbhuiyan08@gmail.com
 🐙 GitHub: [github.com/your-username](https://github.com/JabirBhuiyan08)
 
