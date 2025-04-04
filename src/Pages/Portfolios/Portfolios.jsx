@@ -25,7 +25,7 @@ const Portfolio = () => {
                   <h2 className="card-title text-lg font-semibold text-green-600">{title}</h2>
                   <p className="text-sm text-gray-300">{description}</p>
                   <div className="text-green-300">
-                    <h1>Built By: {builtBy}</h1>
+                    <h1>Built By : {builtBy}</h1>
                   </div>
                 </div>
               </Link>
