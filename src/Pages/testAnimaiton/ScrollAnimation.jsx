@@ -6,7 +6,7 @@ const FRICTION = 0.85; // Friction for smoother movement
 const SPRING = 0.1; // Spring force for following
 const MAX_SPEED = 1.5; // Maximum speed when boosted
 
-const SnakeMouseTracker = () => {
+const ScrollAnimation = () => {
   const [positions, setPositions] = useState(
     Array(NUM_SEGMENTS).fill({ x: 0, y: 0, vx: 0, vy: 0 })
   );
@@ -100,4 +100,4 @@ const SnakeMouseTracker = () => {
   );
 };
 
-export default SnakeMouseTracker;
+export default ScrollAnimation;

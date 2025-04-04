@@ -2,7 +2,7 @@ import Emails from "../emails";
 import AddSkills from "./AddSkills";
 import Massege from "./Massege";
 import Offers from "./Offers";
-import Portfolios from "./Portfolios";
+import Portfolios from "./DashboardPortfolios";
 
 const DashHome = () => {
   return (

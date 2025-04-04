@@ -21,9 +21,9 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="relative bg-gray-900/30 backdrop-blur-lg p-6 rounded-2xl shadow-lg text-center w-full max-w-xs"
+            className="relative bg-gray-900/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg text-center w-full max-w-xs"
           >
-            <div className="text-xl  text-green-400 mb-4 mx-auto">{skill.icon}</div>
+            <div className="text-xl text-green-400 mb-4 mx-auto">{skill.icon}</div>
             <h2 className="text-sm font-semibold text-white">{skill.name}</h2>
             
             <motion.div className="relative w-24 h-24 mx-auto mt-4">
@@ -40,13 +40,12 @@ const Skills = () => {
                   cx="50"
                   cy="50"
                   r="30"
-                  stroke="rgb(54, 69, 79)"
+                  stroke="#3F7D58"
                   strokeWidth="8"
                   strokeLinecap="round"
                   fill="transparent"
-                  strokeDasharray="251"
-                  strokeDashoffset="251"
-                  animate={{ strokeDashoffset: 251 - (251 * skill.level) / 100 }}
+                  strokeDasharray="188.4" // Correct circumference for r = 30
+                  strokeDashoffset={188.4 - (188.4 * skill.level) / 100} // Adjust based on level
                   transition={{ duration: 1.5 }}
                 />
               </svg>

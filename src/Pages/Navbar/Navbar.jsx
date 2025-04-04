@@ -2,11 +2,11 @@ import { useState } from "react";
 
 const Navbar = ({ scrollToHeader, scrollToAbout, scrollToSkills, scrollToService, scrollToPortfolio, scrollToContact }) => {
   return (
-    <nav className="bg-gray-900/30 text-white p-4 fixed top-0 left-0 w-full sm:w-28 sm:top-1/2 sm:left-5 sm:transform sm:-translate-y-1/2 shadow-lg rounded-r-lg z-50">
+    <nav className="bg-gray-900/80 text-white p-4 fixed top-0 left-0 w-full sm:w-28 sm:top-1/2 sm:left-5 sm:transform sm:-translate-y-1/2 shadow-lg rounded-r-lg z-50">
       
       {/* Mobile Menu - Daisy UI Dropdown */}
       <div className="sm:hidden flex justify-between items-center">
-        <h1 className="text-lg font-semibold">Menu</h1>
+        <h1 className="text-2xl text-gray-600 font-bold">Jabir Bhuiyan</h1>
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -3,14 +3,12 @@ import HeaderSection from "./HeaderSection";
 import SubmitEmail from "./SubmitEmail";
 import About from "../About";
 import Service from "../Services/Service";
-import Portfolio from "../Portfolios/Portfolio";
 import Contact from "../contact/contact";
 import ContactForm from "../contact/ContactForm";
 import Skills from "../Skills/Skills";
 import Navbar from "../Navbar/Navbar";
 import ScrollAnimation from "../testAnimaiton/ScrollAnimation";
-
-
+import Portfolio from "../Portfolios/Portfolios";
 
 const Home = () => {
   const headerRef = useRef(null);
@@ -21,7 +19,7 @@ const Home = () => {
   const contactRef = useRef(null);
 
   const scrollToSection = (ref) => {
-    if (ref && ref.current) {
+    if (ref?.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -38,8 +36,7 @@ const Home = () => {
       />
       
       <SubmitEmail />
-      
-      {/* Wrapped sections inside divs with refs */}
+
       <div ref={headerRef}>
         <HeaderSection />
       </div>
@@ -50,7 +47,8 @@ const Home = () => {
 
       <hr className="mt-32" />
 
-      <ScrollAnimation></ScrollAnimation>
+      <ScrollAnimation />
+
       <div ref={skillRef}>
         <Skills />
       </div>
@@ -63,11 +61,8 @@ const Home = () => {
         <Portfolio />
       </div>
 
-      <div >
-        <Contact />
-      </div>
-
       <div ref={contactRef}>
+        <Contact />
         <ContactForm />
       </div>
     </div>
